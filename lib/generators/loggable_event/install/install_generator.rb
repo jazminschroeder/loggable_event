@@ -12,7 +12,7 @@ module LoggableEvent
         say "Start logging!"
       end
       
-      def self.next_migration_number
+      def self.next_migration_number(path)
         ActiveRecord::Generators::Base.next_migration_number
       end
       
