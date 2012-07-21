@@ -1,4 +1,5 @@
 require 'rails/generators/migration'
+require 'rails/generators/active_record' 
 module LoggableEvent
   module Generators
     class InstallGenerator < Rails::Generators::Base
