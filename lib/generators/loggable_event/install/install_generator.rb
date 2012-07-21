@@ -1,8 +1,8 @@
-require 'rails/generators/active_record'
+require 'rails/generators/migration'
 module LoggableEvent
   module Generators
     class InstallGenerator < Rails::Generators::Base
-     # include Rails::Generators::Migration
+      include Rails::Generators::Migration
       source_root File.expand_path('../templates', __FILE__)
   
       def generate_model
