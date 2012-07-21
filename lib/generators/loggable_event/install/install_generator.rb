@@ -12,9 +12,9 @@ module LoggableEvent
         say "Start logging!"
       end
       
-      def self.next_migration_number
-        Time.now.utc.strftime("%Y%m%d%H%M%S")
-        #ActiveRecord::Generators::Base.next_migration_number
+      def self.next_migration_number(path)
+        #Time.now.utc.strftime("%Y%m%d%H%M%S")
+        ActiveRecord::Generators::Base.next_migration_number(path)
       end
       
     end
