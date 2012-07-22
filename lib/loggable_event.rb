@@ -26,6 +26,6 @@ module LoggableEvent
   
   private
   def current_user_id
-    User.current.nil? ? nil : User.current.id
+    defined?(User.current.id).nil? ? nil : User.current.id 
   end
 end

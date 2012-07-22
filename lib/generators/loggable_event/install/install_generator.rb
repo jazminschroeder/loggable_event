@@ -13,7 +13,6 @@ module LoggableEvent
       end
       
       def self.next_migration_number(path)
-        #Time.now.utc.strftime("%Y%m%d%H%M%S")
         ActiveRecord::Generators::Base.next_migration_number(path)
       end
       
